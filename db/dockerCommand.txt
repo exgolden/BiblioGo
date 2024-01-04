@@ -1,0 +1,4 @@
+docker run --name biblio -e POSTGRES_USER=isaibb -e POSTGRES_PASSWORD=Constructora4 -p 5432:5432 -d postgres
+docker exec -it biblio bash
+    psql -U isaibb --password
+    CREATE DATABASE bibliodb;
